@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -24,7 +25,8 @@ int main(){
 
     Colors color1;
     Colors color2;
-    Colors color3;
+    Colors color3; 
+
     color1.setRed(243);
     color1.setGreen(112);
     color1.setBlue(201);
@@ -37,8 +39,12 @@ int main(){
     color3.setGreen(232);
     color3.setBlue(150);
 
+    cout << setw(18) << "Colors:" << endl; 
+    cout << "Color #1: ";
     color1.print();
+    cout << "Color #2: ";
     color2.print();
+    cout << "Color #3: ";
     color3.print();
 
 
