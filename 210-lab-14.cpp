@@ -11,6 +11,10 @@ public:
     void setBlue(int b) {this->blue = b; }
     int getBlue() {return blue; }
 
+    void print(){
+        cout << "Red: #" << red << " " << "Green: #" << green << " " << "Blue: #" << blue << endl;
+    }
+
 private:
     int red, green, blue;
 
@@ -18,7 +22,26 @@ private:
 
 int main(){
 
-    Colors color;
+    Colors color1;
+    Colors color2;
+    Colors color3;
+    color1.setRed(243);
+    color1.setGreen(112);
+    color1.setBlue(201);
+
+    color2.setRed(123);
+    color2.setGreen(234);
+    color2.setBlue(50);
+
+    color3.setRed(13);
+    color3.setGreen(232);
+    color3.setBlue(150);
+
+    color1.print();
+    color2.print();
+    color3.print();
+
+
 
     return 0;
 }
