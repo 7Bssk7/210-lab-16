@@ -3,7 +3,7 @@
 
 using namespace std;
 
-class Colors {
+class Color{
 public: 
     void setRed(int r) { this->red = r; }
     int getRed() {return red; }
@@ -13,7 +13,7 @@ public:
     int getBlue() {return blue; }
 
     void print(){
-        cout << "Red: #" << red << " " << "Green: #" << green << " " << "Blue: #" << blue << endl;
+        cout << "RGB(" << red << ", " << green << ", " << blue << ")" << endl;
     }
 
 private:
@@ -23,9 +23,11 @@ private:
 
 int main(){
 
-    Colors color1;
-    Colors color2;
-    Colors color3; 
+    Color color1;
+    Color color2;
+    Color color3; 
+    Color color4;
+
 
     color1.setRed(243);
     color1.setGreen(112);
@@ -39,6 +41,10 @@ int main(){
     color3.setGreen(232);
     color3.setBlue(150);
 
+    color4.setRed(0);
+    color4.setGreen(255);
+    color4.setBlue(0);
+
     cout << setw(18) << "Colors:" << endl; 
     cout << "Color #1: ";
     color1.print();
@@ -46,6 +52,9 @@ int main(){
     color2.print();
     cout << "Color #3: ";
     color3.print();
+    cout << "Color #4: ";
+    color4.print();
+    cout << "Color #4 has only green value: " << color4.getGreen() << endl;
 
 
 
