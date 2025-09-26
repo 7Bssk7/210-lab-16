@@ -6,11 +6,11 @@ using namespace std;
 class Color{
 public: 
     void setRed(int r) { this->red = r; }
-    int getRed() {return red; }
+    int getRed() const {return red; }
     void setGreen(int g) {this->green = g; }
-    int getGreen() {return green; }
+    int getGreen() const {return green; }
     void setBlue(int b) {this->blue = b; }
-    int getBlue() {return blue; }
+    int getBlue() const {return blue; }
 
     void print(){
         cout << "RGB(" << red << ", " << green << ", " << blue << ")" << endl;
@@ -22,12 +22,10 @@ private:
 };
 
 int main(){
-
     Color color1;
     Color color2;
     Color color3; 
     Color color4;
-
 
     color1.setRed(243);
     color1.setGreen(112);
@@ -55,8 +53,6 @@ int main(){
     cout << "Color #4: ";
     color4.print();
     cout << "Color #4 has only green value: " << color4.getGreen() << endl;
-
-
 
     return 0;
 }
