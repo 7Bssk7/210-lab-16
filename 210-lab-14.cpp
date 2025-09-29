@@ -3,54 +3,54 @@
 
 using namespace std;
 
+// This class "Color" represents an RGB color, it contains red, green and blue values
 class Color{
 public: 
     // Setter for the red value
     void setRed(int r) { this->red = r; }
     // Getter for the red value
     int getRed() const {return red; }
-
     // Setter for the green value
     void setGreen(int g) {this->green = g; }
     // Getter for the green value
     int getGreen() const {return green; }
-
     // Setter for the blue value 
     void setBlue(int b) {this->blue = b; }
     // Getter for the blue value
     int getBlue() const {return blue; }
-
+    //Prints the color in the RGB format: (red value, green value, blue value)
     void print() const {
         cout << "RGB(" << red << ", " << green << ", " << blue << ")" << endl;
     }
 
 private:
+    // Private member variables for the RGB values(red, green, blue)
     int red, green, blue;
 
 };
 
 int main(){
+    //This code creates four Color objects
     Color color1;
     Color color2;
     Color color3; 
     Color color4;
 
+    //This code assigns RGB values to each Color object using setters
     color1.setRed(243);
     color1.setGreen(112);
     color1.setBlue(201);
-
     color2.setRed(123);
     color2.setGreen(234);
     color2.setBlue(50);
-
     color3.setRed(13);
     color3.setGreen(232);
     color3.setBlue(150);
-
     color4.setRed(0);
     color4.setGreen(255);
     color4.setBlue(0);
 
+    //This code displays all of Color objects (colors)
     cout << setw(18) << "Colors:" << endl; 
     cout << "Color #1: ";
     color1.print();
@@ -59,6 +59,7 @@ int main(){
     cout << "Color #3: ";
     color3.print();
     cout << "Color #4: ";
+    //
     color4.print();
     cout << "Color #4 has only green value: " << color4.getGreen() << endl;
 
