@@ -51,7 +51,7 @@ int main(){
     color4.setBlue(0);
 
     //This code displays all of Color objects (colors)
-    cout << setw(18) << "Colors:" << endl; 
+    cout << setw(15) << "Colors" << endl; 
     cout << "Color #1: ";
     color1.print();
     cout << "Color #2: ";
@@ -59,7 +59,8 @@ int main(){
     cout << "Color #3: ";
     color3.print();
     cout << "Color #4: ";
-    //
+    //This is just an example of using a getter for the class Color
+    //This code outputs only the green value of RGB of color #4
     color4.print();
     cout << "Color #4 has only green value: " << color4.getGreen() << endl;
 
