@@ -5,14 +5,22 @@ using namespace std;
 
 class Color{
 public: 
+    // Setter for the red value
     void setRed(int r) { this->red = r; }
+    // Getter for the red value
     int getRed() const {return red; }
+
+    // Setter for the green value
     void setGreen(int g) {this->green = g; }
+    // Getter for the green value
     int getGreen() const {return green; }
+
+    // Setter for the blue value 
     void setBlue(int b) {this->blue = b; }
+    // Getter for the blue value
     int getBlue() const {return blue; }
 
-    void print(){
+    void print() const {
         cout << "RGB(" << red << ", " << green << ", " << blue << ")" << endl;
     }
 
