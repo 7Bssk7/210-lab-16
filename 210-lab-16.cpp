@@ -43,10 +43,10 @@ int main(){
     Color color2;
     Color color3; 
     Color color4;
-    Color color5;
-    Color color6(41);
-    Color color7(23,143);
-    Color color8(123, 253, 213);
+    Color color5; // Default contructor, all values are set to 0, RGB(0, 0, 0)
+    Color color6(41); // Partial constructor, only red value provided
+    Color color7(23,143); // Partial constructor, only red and green values provided
+    Color color8(123, 253, 213); // Full constructor all values provided (red, green, blue)
 
     //This code assigns RGB values to each Color object using setters
     color1.setRed(243);
@@ -75,12 +75,16 @@ int main(){
     //This code outputs only the green value of RGB of color #4
     color4.print();
     cout << "Color #4 has only green value: " << color4.getGreen() << endl;
+    // This code outputs default constructor 
     cout << "Color #5: ";
     color5.print();
+    // This code outputs partial constructor with only red value provided
     cout << "Color #6: ";
     color6.print();
+    // This code outputs partial constructor with only red and green values provided
     cout << "Color #7: ";
     color7.print();
+    // This code outputs full constructor withh all values provided (red, green, blue)
     cout << "Color #8: ";
     color8.print();
 
