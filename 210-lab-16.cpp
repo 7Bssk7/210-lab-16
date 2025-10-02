@@ -38,7 +38,7 @@ private:
 };
 
 int main(){
-    //This code creates four Color objects
+    //This code creates 8 Color objects
     Color color1;
     Color color2;
     Color color3; 
