@@ -40,8 +40,9 @@ int main(){
     Color color3; 
     Color color4;
     Color color5;
-    Color color6;
-    Color color7;
+    Color color6(41);
+    Color color7(23,143);
+    Color color8(123, 253, 213);
 
     //This code assigns RGB values to each Color object using setters
     color1.setRed(243);
