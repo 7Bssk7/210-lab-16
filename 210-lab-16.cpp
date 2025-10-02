@@ -6,9 +6,13 @@ using namespace std;
 // This class "Color" represents an RGB color, it contains red, green and blue values
 class Color{
 public: 
+    // Default constructor (sets all vlaues to 0 (black))
     Color()                          { red = 0; green = 0; blue = 0; }
+    // Partial constructor (only red value provided, green/blue values - default to 0)
     Color(int r)                     { red = r; green = 0; blue = 0; }
+    // Partial constructor (only red and green values provided, blue value - defaults to 0)
     Color(int r, int g)              { red = r; green = g; blue = 0; }
+    // Full constructor (all values provided(reb,grenn,blue))
     Color(int r, int g, int b)       { red = r; green = g; blue = b; }
     // Setter for the red value
     void setRed(int r) { this->red = r; }
