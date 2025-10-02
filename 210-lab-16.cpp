@@ -71,6 +71,14 @@ int main(){
     //This code outputs only the green value of RGB of color #4
     color4.print();
     cout << "Color #4 has only green value: " << color4.getGreen() << endl;
+    cout << "Color #5: ";
+    color5.print();
+    cout << "Color #6: ";
+    color6.print();
+    cout << "Color #7: ";
+    color7.print();
+    cout << "Color #8: ";
+    color8.print();
 
     return 0;
 }
