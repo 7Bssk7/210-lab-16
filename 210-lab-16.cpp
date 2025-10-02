@@ -6,7 +6,7 @@ using namespace std;
 // This class "Color" represents an RGB color, it contains red, green and blue values
 class Color{
 public: 
-    // Default constructor (sets all vlaues to 0 (black))
+    // Default constructor (sets all values to 0 (black))
     Color()                          { red = 0; green = 0; blue = 0; }
     // Partial constructor (only red value provided, green/blue values - default to 0)
     Color(int r)                     { red = r; green = 0; blue = 0; }
@@ -43,7 +43,7 @@ int main(){
     Color color2;
     Color color3; 
     Color color4;
-    Color color5; // Default contructor, all values are set to 0, RGB(0, 0, 0)
+    Color color5; // Default constructor, all values are set to 0, RGB(0, 0, 0)
     Color color6(41); // Partial constructor, only red value provided
     Color color7(23,143); // Partial constructor, only red and green values provided
     Color color8(123, 253, 213); // Full constructor all values provided (red, green, blue)
@@ -84,7 +84,7 @@ int main(){
     // This code outputs partial constructor with only red and green values provided
     cout << "Color #7: ";
     color7.print();
-    // This code outputs full constructor withh all values provided (red, green, blue)
+    // This code outputs full constructor with all values provided (red, green, blue)
     cout << "Color #8: ";
     color8.print();
 
