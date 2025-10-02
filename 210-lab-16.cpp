@@ -42,7 +42,6 @@ int main(){
     Color color5;
     Color color6;
     Color color7;
-    
 
     //This code assigns RGB values to each Color object using setters
     color1.setRed(243);
