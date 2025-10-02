@@ -12,7 +12,7 @@ public:
     Color(int r)                     { red = r; green = 0; blue = 0; }
     // Partial constructor (only red and green values provided, blue value - defaults to 0)
     Color(int r, int g)              { red = r; green = g; blue = 0; }
-    // Full constructor (all values provided(reb,grenn,blue))
+    // Full parameter constructor (all values provided(reb,grenn,blue))
     Color(int r, int g, int b)       { red = r; green = g; blue = b; }
     // Setter for the red value
     void setRed(int r) { this->red = r; }
@@ -46,7 +46,7 @@ int main(){
     Color color5; // Default constructor, all values are set to 0, RGB(0, 0, 0)
     Color color6(41); // Partial constructor, only red value provided
     Color color7(23,143); // Partial constructor, only red and green values provided
-    Color color8(123, 253, 213); // Full constructor all values provided (red, green, blue)
+    Color color8(123, 253, 213); // Full parameter constructor all values provided (red, green, blue)
 
     //This code assigns RGB values to each Color object using setters
     color1.setRed(243);
@@ -84,7 +84,7 @@ int main(){
     // This code outputs partial constructor with only red and green values provided
     cout << "Color #7: ";
     color7.print();
-    // This code outputs full constructor with all values provided (red, green, blue)
+    // This code outputs full parameter constructor with all values provided (red, green, blue)
     cout << "Color #8: ";
     color8.print();
 
