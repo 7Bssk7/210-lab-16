@@ -6,6 +6,10 @@ using namespace std;
 // This class "Color" represents an RGB color, it contains red, green and blue values
 class Color{
 public: 
+    Color()                          { red = 0; green = 0; blue = 0; }
+    Color(int r)                     { red = r; green = 0; blue = 0; }
+    Color(int r, int g)              { red = r; green = g; blue = 0; }
+    Color(int r, int g, int b)       { red = r; green = g; blue = b; }
     // Setter for the red value
     void setRed(int r) { this->red = r; }
     // Getter for the red value
@@ -35,6 +39,10 @@ int main(){
     Color color2;
     Color color3; 
     Color color4;
+    Color color5;
+    Color color6;
+    Color color7;
+    
 
     //This code assigns RGB values to each Color object using setters
     color1.setRed(243);
