@@ -1,3 +1,5 @@
+// COMSC 210 | Lab 17 | Arkhip Finski
+// IDE used: Visual Studio
 #include <iostream>
 #include <iomanip>
 
